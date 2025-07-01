@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM09B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 9B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes, en equipo, construyan un brazo robótico simple de dos servos, implementen el GCS que coordina los datos de la A.I. Lens (X,Y) con el movimiento de ambos servos, y prueben y depuren el sistema para que el brazo intente alcanzar/tocar un objeto de forma autónoma.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y preparar el entorno.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Refrescar el plan y dar consejos de construcción.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Construcción física, implementación del plan y pruebas.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de prototipos y retroalimentación.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un brazo robótico simple con dos servos funcional, programado para detectar y manipular un objeto usando visión IA, demostrando al menos uno de los planes individuales.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens y dos servomotores) por equipo de 4 estudiantes.</li>
+                                        <li>Objetos objetivo para el brazo (ej. cubos pequeños, gemas).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens y dos servomotores) listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Tener un diagrama o video corto del ensamblaje del brazo y el objeto objetivo para cada equipo.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión de construcción.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, ingenieros de manipulación! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y preparar el entorno de trabajo para el brazo robótico.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización ⏰ 2 minutos</h3>
+                            <p>Anuncia el inicio de la actividad y conecta con los diseños de la sesión anterior.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipos, es hora del ensamblaje final! Sus planos de brazo robótico inteligente están listos. Su misión es construir el brazo de dos servos, conectar todo correctamente y, lo más desafiante, programar la lógica que usa las coordenadas X e Y de la cámara para mover ambos servos a la vez. Recuerden que la sesión pasada generaron varios planes individuales, ¡hoy es el día de darles vida!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Apoyo a la Construcción y Preparación del Área de Trabajo ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 4) Proyecta un diagrama/video del ensamblaje y asegura las áreas de trabajo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para inspirar su construcción, aquí tienen un diagrama o video corto del ensamblaje (proyecta). Destaca cómo se conecta el servo de la base y el de elevación. ¡Asegúrense de que cada equipo tenga su "área de trabajo" con el objeto que deben alcanzar, listo para el brazo!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: <strong>'Mi equipo construyó un brazo robótico y logramos que usara la visión IA para intentar alcanzar un objeto.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Guiar a los alumnos para que refresquen su plan y reciban consejos clave para la construcción y prueba de sus servos.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recordando la Misión y el Plan ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Anuncia la actividad y guía a los equipos para que recuperen su plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, equipos! Antes de empezar a construir, entremos al <strong>A.I. GYM</strong>. ¿Cuál era la tarea de su brazo robótico? Vuelvan a describirle su misión a Xolo. Por ejemplo: <strong>'Xolo, nuestro brazo debe ver una gema azul y moverse para alinearse en X (con la base) y en Y (con el brazo) hasta tocarla.'</strong>. Él les devolverá el plan exacto para guiar su programación. ¡La clave hoy es usar variables para guardar los ángulos de los servos y ajustarlos poco a poco!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">AL INICIO:
+    // ... inicialización de servos y variables ...
+POR SIEMPRE:
+    SI (IA_ve_objeto()):
+        fijar "pos_x" a leer_info_objeto_X()
+        fijar "pos_y" a leer_info_objeto_Y()
+
+        // Lógica de ajuste para el servo de la BASE (S1) con pos_x
+        SI (pos_x < 140):
+            fijar "angulo_base" a "angulo_base" + 1
+        SINO SI (pos_x > 180):
+            fijar "angulo_base" a "angulo_base" - 1
+        FIN SI
+        
+        // Lógica de ajuste para el servo del BRAZO (S2) con pos_y
+        SI (pos_y < 100):
+            fijar "angulo_brazo" a "angulo_brazo" + 1
+        SINO SI (pos_y > 140):
+            fijar "angulo_brazo" a "angulo_brazo" - 1
+        FIN SI
+
+        // Mover los servos a sus nuevos ángulos calculados
+        nezha_servo_S1_angulo(angulo_base)
+        nezha_servo_S2_angulo(angulo_brazo)
+    FIN SI
+    ESPERAR(50)</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Consejos de Construcción y Conexión ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Comparte los consejos de Xolo para el montaje y la conexión de los servos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya tienen su plan fresco. Ahora, presten atención a estos consejos de Xolo. Primero, <strong>Conexiones Claras</strong>: marquen qué servo es la base (S1) y cuál es el brazo (S2). ¡Conectarlos al revés causará caos! Segundo, <strong>Libertad de Movimiento</strong>: al construir, muevan el brazo con la mano para asegurarse de que no choca consigo mismo en ningún punto. ¡Esto es vital para que funcione sin problemas!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Fases de construcción, implementación del plan, pruebas sistemáticas y depuración.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Construcción del Brazo Robótico (Equipo) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que comiencen a ensamblar su brazo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos a la obra, equipos! Reúnanse y ensamblen el brazo de dos servos, móntenlo en su base y fijen la A.I. Lens en una posición que tenga una buena vista del área de trabajo del brazo. ¡Estaré circulando para apoyar intensamente en esta fase mecánica, que es más compleja que las anteriores!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Implementación y Pruebas Iniciales (y Rotación de Planes) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Guía a los equipos para que implementen sus planes y realicen las primeras pruebas, rotando entre ellos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Brazo construido! Ahora, abran MakeCode. Recuerden que en la sesión pasada generaron varios planes individuales. <strong>Como equipo, elijan UNO de esos planes para empezar.</strong> Implementen el complejo GCS elegido, asegurándose de crear y usar las variables para los ángulos. Descarguen el programa y observen el primer movimiento. <strong>Una vez que este primer plan esté funcionando de manera fiable, ¡roten! El siguiente miembro del equipo cargará su plan individual para implementarlo, probarlo y depurarlo. Intenten probar tantos planes como el tiempo lo permita.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Depuración Intensa y Calibración ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Facilita el ciclo de depuración y calibración, enmarcando los errores como oportunidades.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Si el brazo no se mueve como esperaban, ¡no se preocupen! Este es el ciclo de depuración más desafiante hasta ahora. Describan el problema a Xolo. Por ejemplo: <strong>'Xolo, un servo se mueve en la dirección incorrecta.'</strong> o <strong>'Nuestro brazo tiembla y se mueve a tirones.'</strong> Xolo les dará pistas para solucionar problemas de orientación, suavidad (ESPERAR, incremento de ángulo) o límites de seguridad (evitar que el servo intente ir más allá de sus límites físicos). ¡Ajusten, prueben y calibren hasta que el rendimiento sea aceptable!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los brazos robóticos y reflexión sobre el proceso.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 10) Anuncia la actividad final e instruye una reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Excelente trabajo, equipos! Llegamos al <strong>Gnius STORM</strong>. Antes de mostrar sus creaciones, piensen un momento: ¿Cuál fue el mayor desafío: la construcción del brazo o la programación de la coordinación?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Demo) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 11) Los equipos demuestran el intento de alineación y alcance del brazo robótico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Es hora de la demostración! Cada equipo realizará una demostración. Coloquen el objeto objetivo y la clase observará si el brazo robótico intenta el proceso de alineación y alcance. Recuerden, el éxito no es alcanzarlo perfectamente, sino mostrar el comportamiento inteligente de corrección. Después, respondan: <strong>"Muestren la parte de su código que controla el movimiento de arriba y abajo. ¿Tuvieron que invertir la lógica?"</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierra la sesión y conecta con la siguiente unidad.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Absolutamente impresionante! Han construido y programado uno de los tipos de robot más importantes y complejos. Han logrado una verdadera 'coordinación ojo-mano' artificial. Esta hazaña de ingeniería y programación demuestra que están listos para pensar no solo en cómo funcionan los robots, sino en cómo deberían funcionar en nuestro mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
